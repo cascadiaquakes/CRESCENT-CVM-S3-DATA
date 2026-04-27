@@ -1,0 +1,92 @@
+{
+    "radius_in_meters": 6371000.0,
+    "title": "WUS324_Casc",
+    "id": "WUS324_Casc",
+    "model": "WUS324_Casc",
+    "summary": "This model is was extracted from WUS324 (Rodgers et al, 2024, doi: 10.1029/2024GL110911) for just the Cascadia region. It specifies anisotropic wavespeeds, density and attenuation quality factors for full waveform simulations ",
+    "keywords": "seismic, tomography, adjoint waveform tomography",
+    "Conventions": "CF-1.0",
+    "Metadata_Conventions": "Unidata Dataset Discovery v1.0",
+    "data_revision": "r0.0",
+    "acknowledgment": "Model was provided by Arthur Rodgers, Lawrence Livermore National Laboratory, Livermore, CA, USA",
+    "comment": "null",
+    "grid_ref": "latitude_longitude",
+    "utm_zone": "10",
+    "ellipsoid": "WGS84",
+    "data_layout": "vertex",
+    "geospatial_lat_min": 39.0,
+    "geospatial_lat_max": 52.0,
+    "geospatial_lat_units": "degrees_north",
+    "geospatial_lat_resolution": 0.125,
+    "geospatial_lon_min": -130,
+    "geospatial_lon_max": -116,
+    "geospatial_lon_units": "degrees_east",
+    "geospatial_lon_resolution": 0.125,
+    "geospatial_vertical_min": -4.0,
+    "geospatial_vertical_max": 400.0,
+    "geospatial_vertical_units": "km",
+    "geospatial_vertical_positive": "down",
+    "netcdf_file": "WUS324.nc",
+    "reference": "Rodgers (2024)",
+    "reference_pid": "LLNL-MI-865269",
+    "author_name": "Arthur Rodgers",
+    "author_email": "rodgers7@llnl.gov",
+    "author_institution": "Lawrence Livermore National Laboratory, Livermore, CA, USA",
+    "author_url": "https://people.llnl.gov/rodgers7",
+    "repository_pid": "null",
+    "NCO": "netCDF Operators version 5.2.1 (Homepage = http://nco.sf.net, Code = http://github.com/nco/nco, Citation = 10.1016/j.envsoft.2008.03.004)",
+    "repository_name": "CVM",
+    "repository_institution": "CRESCENT",
+    "history": "Tue Apr 22 04:33:13 2025: ncatted -O -a repository_institution,global,o,c,CRESCENT WUS324_Casc.r0.0.nc\nTue Apr 22 04:33:08 2025: ncatted -O -a repository_name,global,o,c,CVM WUS324_Casc.r0.0.nc\nTue Apr 22 04:31:48 2025: ncatted -O -a data_revision,global,o,c,r0.0 WUS324_Casc.r0.0.nc\n2024-06-10 model provided by the author \n",
+    "vars": [
+        "longitude",
+        "Vs",
+        "Vp",
+        "Density",
+        "latitude",
+        "depth"
+    ],
+    "size_kb": 32031.17,
+    "data_vars": [
+        "Vs",
+        "Vp",
+        "Density"
+    ],
+    "z_var": "depth",
+    "variables": {
+        "longitude": {
+            "long_name": "Longitude, positive east",
+            "units": "degrees_east",
+            "standard_name": "longitude"
+        },
+        "Vs": {
+            "long_name": "Isotropic Shear Wavespeed",
+            "display_name": "VS (km/s)",
+            "units": "kilometers/second",
+            "data_source": "data-derived"
+        },
+        "Vp": {
+            "long_name": "Isotropic Compressional Wavespeed",
+            "display_name": "VP (km/s)",
+            "units": "kilometers/second",
+            "data_source": "data-derived"
+        },
+        "Density": {
+            "long_name": "Density",
+            "display_name": "Rho (kg/m^3)",
+            "units": "kilograms/meter^3",
+            "data_source": "data-derived"
+        },
+        "latitude": {
+            "long_name": "Latitude, positive north",
+            "units": "degrees_north",
+            "standard_name": "latitude"
+        },
+        "depth": {
+            "long_name": "depth below earth surface",
+            "standard_name": "depth",
+            "units": "kilometers",
+            "positive": "down"
+        }
+    }
+}

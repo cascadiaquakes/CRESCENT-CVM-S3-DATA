@@ -1,0 +1,62 @@
+[
+  {
+    "url": "cascadia_subduction_interface_temp.geojson",
+    "label": "Graham et al., 2018 - Cascadia Subduction Interface",
+    "title": "Cascadia Subduction Interface",
+    "citation": ["Graham, S. E., Loveless, J. P., & Meade, B. J., 2018", "https://doi.org/10.1029/2017GC007391"],
+    "fillOpacity": 0.3,
+    "lineWidth": 4,
+    "decimation": 1,
+    "marker": "rectangle"
+  },
+  {
+    "url": "Hayesetal2018_slab2_v2018.geojson",
+    "label": "Hayes et al., 2018 - Slab2",
+    "title": "A Comprehensive Subduction Zone Geometry Model, Cascadia",
+    "citation": ["Hayes, G., 2018", "https://doi.org/10.5066/F7PV6JNV"],
+    "fillOpacity": 0.3,
+    "lineWidth": 4,
+    "decimation": 1,
+    "marker": "rectangle"
+  },
+  {
+    "url": "McCroryetal_gmtcontour.geojson",
+    "label": "McCrory et al., 2012 - Juan de Fuca slab",
+    "title": "JdF slab geometry beneath the Cascadia subduction margin",
+    "citation": ["McCrory et al., 2012", "https://doi.org/10.1029/2012JB009407"],
+    "fillOpacity": 0.3,
+    "lineWidth": 4,
+    "decimation": 1,
+    "marker": "rectangle"
+  },
+  {
+    "url": "Delphetal-2021.geojson",
+    "label": "Delph et al., 2021 - Modified McCrory et al 2012",
+    "title": "Delph2021 slab model made from modifying McCrory et al 2012 slab",
+    "citation": ["Delph, Thomas, Levander, 2021", "https://doi.org/10.1016/j.epsl.2020.116724"],
+    "fillOpacity": 0.3,
+    "lineWidth": 4,
+    "decimation": 1,
+    "marker": "rectangle"
+  },
+  {
+    "url": "Casie21-R2T-TOC_medflt-surface-mask_d2.geojson",
+    "label": "Carbotte  et al., 2024 - Top of igneous Oceanic Crust",
+    "title": "Depth to the Top of igneous Oceanic Crust (TOC)",
+    "citation": ["Carbotte et al., Science Advances, 2024", "https://doi.org/10.1126/sciadv.adl3198"],
+    "fillOpacity": 0.3,
+    "lineWidth": 4,
+    "decimation": 2,
+    "marker": "rectangle"
+  },
+  {
+    "url": "Casie21-R2T-PlateBdy_medflt-surface-mask_d2.geojson",
+    "label": "Carbotte  et al., 2024 - Plate boundary/megathrust fault",
+    "title": "Depth to the interpreted plate boundary/megathrust fault",
+    "citation": ["Carbotte et al., Science Advances, 2024", "https://doi.org/10.1126/sciadv.adl3198"],
+    "fillOpacity": 0.3,
+    "lineWidth": 4,
+    "decimation": 2,
+    "marker": "rectangle"
+  }
+]

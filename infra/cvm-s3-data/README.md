@@ -1,31 +1,53 @@
 # CRESCENT CVM S3 Data (infra/new)
 
 This CDK app deploys the CVM S3 data bucket and uploads the data and work area prefixes.
-It is a Python CDK app that uses only standard AWS CDK libraries.
 
-## Context
+This project is set up like a standard Python project.  The initialization
+process also creates a virtualenv within this project, stored under the `.venv`
+directory.  To create the virtualenv it assumes that there is a `python3`
+(or `python` for Windows) executable in your path with access to the `venv`
+package. If for any reason the automatic creation of the virtualenv fails,
+you can create the virtualenv manually.
 
-The `deployment-environment` context value controls whether the app deploys the dev or prod bucket.
+To manually create a virtualenv on MacOS and Linux:
 
-Example:
+```
+$ python3 -m venv .venv
+```
 
-- dev: `cdk synth --context deployment-environment=dev`
-- prod: `cdk synth --context deployment-environment=prod`
+After the init process completes and the virtualenv is created, you can use the following
+step to activate your virtualenv.
 
-## Hard-coded AWS Account/Region
+```
+$ source .venv/bin/activate
+```
 
-The app is configured to deploy to:
+If you are a Windows platform, you would activate the virtualenv like this:
 
-- Account: `818214664804`
-- Region: `us-east-2`
+```
+% .venv\Scripts\activate.bat
+```
 
-## Bucket Names
+Once the virtualenv is activated, you can install the required dependencies.
 
-- dev: `cvm-s3-data-latest-dev-us-east-2-aer1lu3eichu`
-- prod: `cvm-s3-data-crescent-us-east-2-aer1lu3eichu`
+```
+$ pip install -r requirements.txt
+```
 
-## Tags
+At this point you can now synthesize the CloudFormation template for this code.
 
-Only the following tag is applied:
+```
+$ cdk synth
+```
 
-- `crescent:application:name` = `CVM-S3-DATA`
+To add additional dependencies, for example other CDK libraries, just add
+them to your `setup.py` file and rerun the `pip install -r requirements.txt`
+command.
+
+## Useful commands
+
+ * `cdk ls`          list all stacks in the app
+ * `cdk synth`       emits the synthesized CloudFormation template
+ * `cdk deploy`      deploy this stack to your default AWS account/region
+ * `cdk diff`        compare deployed stack with current state
+ * `cdk docs`        open CDK documentation

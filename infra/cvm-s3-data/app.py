@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import aws_cdk as cdk
 
-from cvm_s3_data_new.cvm_s3_data_stack import CvmS3DataStack
+from cvm_s3_data.cvm_s3_data_stack import CvmS3DataStack
 
 
 from lib.deployment_environment_config import DeploymentEnvironmentConfig

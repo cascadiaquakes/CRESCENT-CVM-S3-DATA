@@ -16,7 +16,7 @@ class CvmS3DataStack(cdk.Stack):
 
         Tags.of(self).add("crescent:application:name", "CVM-S3-DATA")
 
-        project_root = Path(__file__).resolve().parents[4]
+        project_root = Path(__file__).resolve().parents[3]
         data_dir = project_root / "data"
         work_area_dir = project_root / "work_area"
 

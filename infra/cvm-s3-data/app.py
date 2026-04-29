@@ -13,15 +13,12 @@ AWS_REGION = 'us-east-2'
 # Example: `cdk synth --context deployment-environment=dev`
 deployment_environments_configs: dict[str, DeploymentEnvironmentConfig] = {
     "dev": DeploymentEnvironmentConfig(
-        bucket_name="cvm-s3-data-latest-dev-us-east-2-aer1lu3eichu"
+        bucket_name="cvm-s3-data-dev-us-east-2-aer1lu3eichu"
     ),
     "prod": DeploymentEnvironmentConfig(
         bucket_name="cvm-s3-data-crescent-us-east-2-aer1lu3eichu"
     ),
 }
-
-#PROD_BUCKET_NAME = "cvm-s3-data-crescent-us-east-2-aer1lu3eichu"
-#DEV_BUCKET_NAME = "cvm-s3-data-latest-dev-us-east-2-aer1lu3eichu"
 
 app = cdk.App()
 
@@ -51,7 +48,7 @@ resource_prefix=f"{deployment_environment}-" if deployment_environment != "prod"
 
 CvmS3DataStack(
     app,
-    f"{resource_prefix}cvm-s3-data",
+    f"{resource_prefix}crescent-cvm-s3-data",
     env=cdk.Environment(account=AWS_ACCOUNT_ID, region=AWS_REGION),
     config=env_config,
 )

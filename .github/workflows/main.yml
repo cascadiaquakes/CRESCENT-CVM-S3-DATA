@@ -28,6 +28,7 @@ jobs:
 
   deploy_dev:
     name: Deploy Dev Resources
+    needs: build
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     concurrency:

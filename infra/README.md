@@ -2,6 +2,8 @@
 
 The github workflow in `main.yml` assumes a [trunk-based development workflow](https://trunkbaseddevelopment.com/) where developers either push directly to the `main` branch or create PRs from short-lived feature branches that are merged into `main` (typically after code review).
 
+Note that the github action for cloning the repo requires `lfs: true` to enable [large file support](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage) because some of the files imported into this repo are larger than GitHub's maximum file size.
+
 Pushing to `main` or merging a PR to `main` will trigger a deploy of the Dev resources automatically.
 
 The 'Deploy to Prod Environment' job is gated by a GitHub Environment `Production`. The GitHub repository settings for the Environment include the list of **Required reviewers** who are able to trigger the prod deployment job.

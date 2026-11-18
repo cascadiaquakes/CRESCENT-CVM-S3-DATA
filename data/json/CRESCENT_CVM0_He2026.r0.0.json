@@ -25,7 +25,7 @@
     "geospatial_lat_units": "degrees_north",
     "geospatial_lat_resolution": 0.2,
     "geospatial_vertical_min": -3.0,
-    "geospatial_vertical_max": 90.0,
+    "geospatial_vertical_max": 100.0,
     "geospatial_vertical_units": "km",
     "geospatial_vertical_positive": "down",
     "keywords": "seismic,Rayleigh waves dispersion,shear wave,s wave,CRESCENT,Cascadia,ambient noise dispersion,receiver functions",
@@ -47,7 +47,7 @@
         "easting",
         "northing"
     ],
-    "size_kb": 22053.21,
+    "size_kb": 24382.89,
     "data_vars": [
         "Vp",
         "Vs",
